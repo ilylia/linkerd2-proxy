@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: icepuma/rust-action@1.37.0
     - name: Format
-      run: cargo fmt --check
+      run: cargo fmt -- --check
     - name: Test
       run: cargo test --verbose --all --no-default-features
